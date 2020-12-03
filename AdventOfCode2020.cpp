@@ -3,12 +3,17 @@
 
 #include <iostream>
 #include "DayOne.h"
+#include "DayTwo.h"
 
 int main()
 {
-    std::cout << "Hello World!\n";
     DayOne day_one;
     day_one.CompleteTask1();
+    day_one.CompleteTask2();
+    
+    DayTwo day_two;
+    day_two.CompleteTask1();
+    day_two.CompleteTask2();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
