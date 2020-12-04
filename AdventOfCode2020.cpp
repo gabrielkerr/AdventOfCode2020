@@ -4,6 +4,7 @@
 #include <iostream>
 #include "DayOne.h"
 #include "DayTwo.h"
+#include "DayThree.h"
 
 int main()
 {
@@ -14,6 +15,10 @@ int main()
     DayTwo day_two;
     day_two.CompleteTask1();
     day_two.CompleteTask2();
+
+    DayThree day_three;
+    day_three.CompleteTask1();
+    day_three.CompleteTask2();
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu

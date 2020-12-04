@@ -29,6 +29,9 @@
     <ClInclude Include="DayTwo.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="DayThree.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <Text Include="Input\DayOne.txt">
@@ -37,5 +40,6 @@
     <Text Include="Input\DayTwo.txt">
       <Filter>Source Files</Filter>
     </Text>
+    <Text Include="Input\DayThree.txt" />
   </ItemGroup>
 </Project>
