@@ -32,3 +32,47 @@ inline std::vector<std::string> readFile(const char* filename) {
     }
     return tokens;
 }
+
+inline bool isStringNumber(const std::string& s)
+{
+    bool isNumber = true;
+    for (size_t i(0); i < s.length(); ++i)
+    {
+        if (!std::isdigit(s[i]))
+        {
+            isNumber = false;
+            break;
+        }
+    }
+
+    return isNumber;
+}
+
+inline bool isNumberWithinRange(const int num, const int min, const int max)
+{
+    return ((num >= min) && (num <= max));
+}
+
+inline void removeNumbersFromString(std::string& s)
+{
+    s.erase(std::remove_if(s.begin(), s.end(), &isdigit), s.end());
+}
+
+inline void removePunctuationFromString(std::string& s)
+{
+    s.erase(std::remove_if(s.begin(), s.end(), &ispunct), s.end());
+}
+
+// trim from start (in place)
+inline void ltrim(std::string& s) {
+    s.erase(s.begin(), std::find_if(s.begin(), s.end(), [](unsigned char ch) {
+        return !std::isspace(ch);
+        }));
+}
+
+// trim from end (in place)
+inline void rtrim(std::string& s) {
+    s.erase(std::find_if(s.rbegin(), s.rend(), [](unsigned char ch) {
+        return !std::isspace(ch);
+        }).base(), s.end());
+}

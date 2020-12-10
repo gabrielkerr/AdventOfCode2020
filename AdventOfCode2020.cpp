@@ -5,6 +5,11 @@
 #include "DayOne.h"
 #include "DayTwo.h"
 #include "DayThree.h"
+#include "DayFour.h"
+#include "DayFive.h"
+
+#include "DaySeven.h"
+#include "DayEight.h"
 
 int main()
 {
@@ -19,6 +24,27 @@ int main()
     DayThree day_three;
     day_three.CompleteTask1();
     day_three.CompleteTask2();
+
+    DayFour day_four;
+    day_four.CompleteTask1();
+    //--------------------//
+
+    DayFive day_five;
+    day_five.CompleteTask1();
+    day_five.CompleteTask2();
+
+    // DaySix
+    //--------------------//
+    //--------------------//
+
+    DaySeven day_seven;
+    day_seven.CompleteTask1();
+    //--------------------//
+
+    DayEight day_eight;
+    day_eight.CompleteTask1();
+    day_eight.CompleteTask2(); // Needs a fix
+
 }
 
 // Run program: Ctrl + F5 or Debug > Start Without Debugging menu
